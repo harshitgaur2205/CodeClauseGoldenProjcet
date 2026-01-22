@@ -1,5 +1,6 @@
 import "./App.css";
 import { useContext, useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import Card from "./components/Card";
 import CreatePlaylist from "./components/CreatePlaylist";
 import { initializePlaylist } from "./initialize";
@@ -171,6 +172,7 @@ function App() {
       >
         <CreatePlaylist />
       </div>
+      <Analytics />
     </>
   );
 }
